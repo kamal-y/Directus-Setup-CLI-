@@ -1,0 +1,22 @@
+{
+  "name": "mavvoc-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "directus start",
+    "pre": "npx directus bootstrap",
+    "restore": "npx directus schema apply snapshot.yaml",
+    "backup": "npx directus schema snapshot snapshot.yaml"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@directus/extensions-sdk": "^12.1.4",
+    "@directus/sdk": "^18.0.3",
+    "@medusajs/js-sdk": "^2.2.0",
+    "axios": "^1.7.9",
+    "directus": "^11.4.0"
+  }
+}
